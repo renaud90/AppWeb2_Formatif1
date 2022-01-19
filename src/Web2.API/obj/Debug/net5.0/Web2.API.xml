@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Web2.API</name>
+    </assembly>
+    <members>
+        <member name="M:Web2.API.Controllers.ProductsController.Get">
+            <summary>
+            Premet l'obtention de la liste de tous les produits en inventaire chez RenaudMarché
+            </summary>
+            <remarks>Pas de remarques</remarks>  
+            <response code="200">Liste complète des produits de RenaudMarché est trouvée et retournée</response>
+            <response code="404">Liste complète des produits de RenaudMarché est introuvable</response>
+        </member>
+        <member name="M:Web2.API.Controllers.ProductsController.Get(System.Int32)">
+            <summary>
+            Premet l'obtention d'un produit via son Id unique
+            </summary>
+            <remarks>Pas de remarques</remarks>  
+            <response code="200">Le produit est trouvé et retourné</response>
+            <response code="404">Le produit est introuvable</response>
+        </member>
+        <member name="M:Web2.API.Controllers.ProductsController.Post(System.Object)">
+            <summary>
+            Permet l'ajout d'un nouveau produit à la liste
+            </summary>
+            <remarks>Pas de remarques</remarks>  
+            <response code="201">Le nouveau produit a été ajouté à la liste</response>
+            <response code="400">Le produit à ajouter est invalide</response>
+        </member>
+        <member name="M:Web2.API.Controllers.ProductsController.Put(System.Object)">
+            <summary>
+            Permet la modification d'un produit de la liste
+            </summary>
+            <remarks>Pas de remarques</remarks>  
+            <response code="201">Le produit a été modifié avec succès</response>
+            <response code="400">Le produit à modifier est invalide ou introuvable</response>
+        </member>
+        <member name="M:Web2.API.Controllers.ProductsController.Delete(System.Int32)">
+            <summary>
+            Premet la suppression d'un produit
+            </summary>
+            <remarks>Pas de remarques</remarks>  
+            <response code="200">Le produit a été supprimé avec succès</response>
+            <response code="404">Le produit à supprimer est introuvable</response>
+        </member>
+    </members>
+</doc>
